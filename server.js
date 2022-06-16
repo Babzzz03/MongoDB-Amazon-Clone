@@ -314,7 +314,7 @@ app.use(express.static( path.join(__dirname, "/amazon-app/build ")));
 
 
 app.get("*", (request, response) => {
-  response.sendFile(path.join(__dirname, "/amazon-app/build", "index.html"));
+  response.sendFile(path.resolve(__dirname, "amazon-app","build","index.html"));
 });
 
 
