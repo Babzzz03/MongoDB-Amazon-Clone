@@ -1,0 +1,160 @@
+.address__container {
+    background-color: white;
+    height: 100vh;
+    overflow: auto;
+   
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 70px;
+
+}
+
+.main__form h1 {
+    margin: 20px 0px;
+}
+
+.address input {
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    outline: 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.address__button {
+    height: 34px;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+
+.address__detail {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.address__description {
+    padding: 40px 0px;
+    border-bottom: 1px solid;
+    border-color: rgb(226, 218, 218);
+}
+
+.address__description > h2 {
+    padding: 10px 0px;
+}
+.address__description > p {
+   font-size: 13px;
+}
+
+.address__form {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.main__form {
+    flex: 0.4;
+}
+
+.form__space {
+    flex: 0.6;
+}
+
+ @media screen and (max-width: 1000px) { 
+
+
+.main__form {
+    flex: 0.7;
+}
+
+.form__space {
+    flex: 0.3;
+}
+
+
+
+
+
+ }
+
+ @media screen and (max-width: 760px) { 
+     .address__image {
+    width: 80%;
+
+}
+.address__container {
+
+    font-size: 10.3px;
+}
+
+.address {
+    
+    padding: 17px 30px;
+
+}
+
+.address__description {
+    padding: 10px 0px;
+   
+}
+
+.main__form {
+    flex: 0.8;
+}
+
+.form__space {
+    flex: 0.2;
+}
+
+.address__button {
+    height: 30px;
+    width: 70%;
+  
+}
+
+.address input {
+ 
+    height: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+ }
+
+ .address__footer p {
+    
+    text-align: center;
+    font-size: 11px;
+ 
+ }
+
+ .address__footer {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+   zoom: 1;
+    background: -webkit-linear-gradient(top,#ddd,#f7f7f7 3px,#fff);
+       
+ }
+
+  .address__footer::after {
+    content: "";
+ 
+   zoom: 1;
+       background: -webkit-linear-gradient(left,#fff,rgba(255,255,255,0),#fff);
+       
+ }

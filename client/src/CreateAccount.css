@@ -1,0 +1,63 @@
+.create__active__alert1 {
+      font-size: 12px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+
+}
+.create__active__alert2 {
+      font-size: 11px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+
+}
+.create__active__alert3 {
+      font-size: 11px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    
+
+}
+
+
+
+.create__alert1 {
+      font-size: 12px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    display: none;
+
+}
+
+.create__alert2 {
+    font-size: 11px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+      display: none;
+
+}
+.create__alert3 {
+      font-size: 11px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  display: none;
+}

@@ -1,0 +1,215 @@
+.header { 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    
+}
+
+
+
+.cart {
+    height: 30px;
+    object-fit: contain;
+}
+
+.header__logo {
+    
+    width: 100px;
+    border-radius: 2px;
+    object-fit: contain;
+
+    margin:0 20px;
+    margin-top: 18px;
+    cursor: pointer;
+    align-items: center;
+    
+
+}
+
+
+
+
+    
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.header__optionBasket {
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.header__searchIcon {
+    padding: 5px;
+    
+    height: 22px;
+    background-color: #febd69;
+     border-top-right-radius: 4px;  
+   border-bottom-right-radius: 4px;
+   
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+
+
+
+.header__searchInput {
+    width: 100%;
+    border: none;
+    height: 12.7px;
+    padding: 10px;
+     border-top-left-radius: 4px;  
+   border-bottom-left-radius: 4px;
+   outline: 0;
+}
+
+.link__style {
+    text-decoration: none;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.fa-bars {
+    color: white;
+}
+.mobile__icon {
+display: none;
+}
+
+@media screen and (max-width: 760px) {
+   .mobile__icon { 
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(60%, 25%);
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #fff;
+
+}}
+
+
+
+.user__name {
+    
+white-space: nowrap; 
+  width: 70px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header__optionLineOne {
+    font-size: 9.5px;
+    
+}
+
+
+
+.header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.header__option:hover {
+    
+  color: #f5bd75;
+ 
+
+}
+
+.header__optionBasket:hover {
+  color: #f5bd75;
+}
+
+.nav__links__mobile {
+    display: none;
+}
+
+
+.nav__item {
+    height: 80px;
+}
+
+.menu__icon {
+    display: none;
+}
+.nav__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    margin-top: 8px;
+    
+}
+
+
+@media screen and (max-width: 760px) {
+  .header { 
+    height: 40px;
+    
+}
+
+.header__searchIcon {
+   display: none;
+}
+
+.header__search {
+   display: none;
+}
+
+.header__searchInput {
+   display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile__menu {
+    position: absolute;
+    right: 0px;
+}
+
+.visible{
+    padding: 0% 0.9%;
+    padding-right: 10px;
+}
+
+.header__logo {
+    
+    width: 60px;
+    
+    margin:0 45px;
+    margin-top: 10px;
+  
+
+}
+
+}
+

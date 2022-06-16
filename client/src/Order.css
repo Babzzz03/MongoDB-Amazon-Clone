@@ -1,0 +1,44 @@
+.order {
+    padding: 40px;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: relative;
+
+}
+
+.order span{
+ 
+font-weight: 600;
+}
+
+.time {
+    margin: 10px 0px;
+}
+.order__address {
+    margin-bottom: 10px;
+}
+.order__location {
+    margin-bottom: 50px;
+}
+
+.order__id {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+   
+
+}
+
+.order__total {
+    font-weight: 500;
+    text-align: right;
+    
+}
+
+@media screen and (max-width: 470px) {
+.order__location {
+    margin-bottom: 30px;
+}
+}
+

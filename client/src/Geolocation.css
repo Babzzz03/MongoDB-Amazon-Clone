@@ -1,0 +1,53 @@
+.geolocation {
+    height: 29px;
+    
+    color: white;
+    padding: 3px;
+    display: flex;
+    background-color:  #232f3e;
+    z-index: 999;
+    text-align: center;
+    align-items: center;
+    
+    
+    
+}
+
+
+.geolocation__content {
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city {
+    font-weight: 900 ;
+}
+
+
+@media screen and (max-width: 960px) {
+
+.geolocation {
+    height: 24px;
+    
+    font-size: 9px;
+    
+    
+    
+}
+
+
+
+}
+
+.geolocation__address {
+   
+}
+
+.name__div {
+    width: 40%;
+}
+

@@ -1,0 +1,323 @@
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+@media  screen and (min-width: 600px) {
+    .slide img {
+
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+    
+}
+
+
+
+.slide img {
+        
+        height: 100%;
+    }
+
+
+.current {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.content {
+    
+    position: absolute;
+    top: 13rem;
+    left: 5rem;
+    opacity: 0;
+    width: 50%;
+    padding: 3rem;
+    background: rgba(0,0,0, 0.3);
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        top: 13rem;
+
+    }
+     100% {
+        visibility: visible;
+        top: 5rem;
+
+    }
+}
+
+
+.content > * {
+color: white;
+    margin-bottom: 1rem;
+}
+
+.current .content{
+    opacity: 1;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.arrow {
+    
+    border: 1.4px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 2rem;
+    
+   height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+.arrow:hover {
+    background: #fff;
+    color: #777;
+
+}
+
+
+.next {
+   
+    top: 25%;
+    right: 0.8rem;
+    zoom: 2;
+
+}
+
+.prev {
+    top: 25%;
+    left: 0.8rem;
+      zoom: 2;
+    
+}
+
+hr {
+    height: 2px;
+    background: #fff;
+    width: 50%}
+
+    @media screen and (max-width: 600px) {
+    
+
+    .slide img {
+        align-items: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+  
+    }
+
+
+@media screen and (max-width: 980px) {
+.next {
+    top: 17%;
+    right: 1rem;
+    zoom: 1;
+
+}
+
+.prev {
+    top: 17%;
+    left: 1rem;
+     zoom: 1;
+}
+
+.content {
+    
+   
+    top: 10rem;
+    left: 4rem;
+    opacity: 0;
+    width: 65%;
+    padding: 1rem;
+    font-size: 17px;
+    
+}
+.content > * {
+
+    margin-bottom: 0.7rem;
+}
+hr {
+    height: 0.2px;
+    background: #fff;
+    width: 50%}
+
+.arrow {
+    border: 1.4px solid #fff;
+  
+    width: 1rem;
+    height: 1rem;
+    
+}
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        top: 20rem;
+
+    }
+     100% {
+        visibility: visible;
+        top: 9rem;
+
+    }
+
+} 
+}
+
+
+@media screen and (max-width: 480px) {
+.next {
+    top: 12%;
+    right: 0.4rem;
+
+}
+
+.prev {
+    top: 12%;
+    left: 0.4rem;
+    
+}
+
+.content {
+    
+   
+    top: 10rem;
+    left: 2rem;
+    opacity: 0;
+    width: 65%;
+    padding: 1rem;
+    font-size: 10px;
+    
+}
+
+.content > * {
+color: white;
+    margin-bottom: 0.7rem;
+}
+hr {
+    height: 0.2px;
+    background: #fff;
+    width: 50%}
+
+.arrow {
+    border: 1.4px solid #fff;
+  
+    width: 1rem;
+    height: 1rem;
+    
+}
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        top: 13rem;
+
+    }
+     100% {
+        visibility: visible;
+        top: 2rem;
+
+    }
+
+} 
+}
+
+@media screen and (max-width: 390px) {
+.next {
+    top: 14%;
+    right: 0.4rem;
+
+}
+
+.prev {
+    top: 14%;
+    left: 0.4rem;
+    
+}
+
+.content {
+    
+   
+    top: 10rem;
+    left: 2rem;
+    opacity: 0;
+    width: 65%;
+    padding: 1rem;
+    font-size: 10px;
+    
+}
+
+.content > * {
+color: white;
+    margin-bottom: 0.7rem;
+}
+hr {
+    height: 0.2px;
+    background: #fff;
+    width: 50%}
+
+.arrow {
+    border: 1.4px solid #fff;
+  
+    width: 1rem;
+    height: 1rem;
+    
+}
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        top: 13rem;
+
+    }
+     100% {
+        visibility: visible;
+        top: 2rem;
+
+    }
+
+}
+
+}

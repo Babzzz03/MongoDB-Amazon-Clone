@@ -1,0 +1,213 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+}
+.home__image {
+    
+    width: 100%;
+    z-index: -1;
+    
+    margin-bottom: -250px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),
+     rgba(0, 0, 0, 0));
+
+}
+
+.home__row{
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+
+}
+
+
+
+
+
+@media screen and (max-width: 970px) {
+.home__image {
+    
+    
+    margin-bottom: -640px;
+    
+}
+}
+
+@media screen and (width: 912px) {
+.home__image {
+    
+    
+    margin-bottom: -940px;
+    
+}
+}
+
+
+@media screen and (max-width: 830px) {
+.home__image {
+    
+    
+    margin-bottom: -770px;
+    
+}
+}
+
+@media screen and (max-width: 810px) {
+.home__image {
+    
+    
+    margin-bottom: -640px;
+    
+}
+}
+
+@media screen and (max-width: 600px) {
+.home__image {
+    
+    
+    margin-bottom: -440px;
+    
+}
+}
+@media screen and (max-width: 490px) {
+.home__image {
+    
+    
+    margin-bottom: -600px;
+    
+}
+}
+
+
+
+@media screen and (max-width: 460px) {
+.home__image {
+    
+    
+    margin-bottom: -680px;
+    
+}
+}
+
+
+@media screen and (max-width: 417px) {
+.home__image {
+    
+    
+    margin-bottom: -680px;
+    
+}}
+
+
+@media screen and (max-width: 413px) {
+.home__image {
+    
+    
+    margin-bottom: -710px;
+    
+}
+}
+
+@media screen and (height:  851px) {
+.home__image {
+    
+    
+    margin-bottom: -990px;
+    
+}}
+
+@media screen and (height:  736px) {
+.home__image {
+    
+    
+    margin-bottom: -530px;
+    
+}
+}
+
+
+@media screen and (max-width: 400px) {
+.home__image {
+    
+    
+    margin-bottom: -580px;
+    
+}}
+
+@media screen and (max-width: 397px) {
+.home__image {
+    
+    
+    margin-bottom: -640px;
+    
+}}
+@media screen and (max-width: 394px) {
+.home__image {
+    
+    
+    margin-bottom: -600px;
+    
+}}
+
+
+
+@media screen and (max-width: 391px) {
+.home__image {
+    
+    
+    margin-bottom: -640px;
+    
+}}
+
+
+@media screen and (max-width: 389px) {
+.home__image {
+    
+    
+    margin-bottom: -430px;
+    
+}}
+
+
+
+
+
+@media screen and (max-width: 380px) {
+.home__image {
+    
+    
+    margin-bottom: -470px;
+    
+}}
+
+@media screen and (max-width: 360px) {
+.home__image {
+    
+    
+    margin-bottom: -539px;
+    
+}}
+
+@media screen and (max-width: 345px) {
+.home__image {
+    
+    
+    margin-bottom: -430px;
+    
+}}
+
+
+
+
+
+
+
+
+
