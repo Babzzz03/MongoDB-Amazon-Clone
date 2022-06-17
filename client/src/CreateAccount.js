@@ -4,7 +4,7 @@ import "./CreateAccount.css";
 
 import { Link, useHistory } from "react-router-dom";
 
-import axios from "axios";
+import blacklogo from "./images/blacklogo.png";
 import { useStateValue } from "./StateProvider";
 import { axiosInstance } from "./Config";
 
@@ -61,7 +61,7 @@ function Login() {
       <Link to="/">
         <img
           className="login__logo"
-          src="https://pngimg.com/uploads/amazon/amazon_PNG21.png"
+          src = { blacklogo }
           alt=""
         />
       </Link>

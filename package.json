@@ -4,12 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "cd amazon-app && npm run build",
-    "install-client": "cd amazon-app && npm install --legacy-peer-deps",
-    "server": "nodemon server.js",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix amazon-app\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix amazon-app\""
+    "start": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --legacy-peer-deps --prefix client npm run build --prefix client"
   },
   "author": "Emma",
   "license": "ISC",
@@ -29,7 +25,6 @@
     "uuid": "^8.3.2",
     "mongoose": "^6.3.3",
     "dotenv": "^16.0.1",
-    "nodemon": "^2.0.16",
     "xss-clean": "^0.1.1",
     "yenv": "^3.0.1"
   },

@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const cors = require("cors");
 const express = require("express");
 const orders = require("./models/Orders");
-var path = require("path");
+const path = require("path");
 
 const helmet = require("helmet");
 
@@ -26,7 +26,7 @@ const app = express();
 app.use(express.json());
 
 app.use(helmet());
-app.use(xss());
+
 app.use(
   cors({
     origin: true,
@@ -310,15 +310,22 @@ const cart = await Cart.findByIdAndDelete({
 
 
 
-app.use(express.static( path.join(__dirname, "/amazon-app/build ")));
-
-
-app.get("*", (request, response) => {
-  response.sendFile(path.resolve(__dirname, "amazon-app","build","index.html"));
-});
 
 
 
+if(process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/client/build")));
+
+  app.get("*", (request, response) => {
+    response.sendFile(
+      path.join(__dirname, "client", "build", "index.html")
+    );
+  });
+} else {
+  app.get('/', (req, res) => {
+    res.send("Api running")
+  })
+}
 
 
 

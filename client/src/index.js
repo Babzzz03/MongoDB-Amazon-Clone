@@ -8,10 +8,8 @@ import reducer, { initialState } from "./reducer";
  ReactDom.render(
     <React.StrictMode>
       <StateProvider initialState={initialState} reducer={reducer}>
-        <App />
+        <App/>
       </StateProvider>
-    </React.StrictMode>
-
-, document.getElementById("root"));
+    </React.StrictMode>, document.getElementById("root"));
 
 

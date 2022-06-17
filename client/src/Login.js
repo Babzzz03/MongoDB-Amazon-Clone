@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import "./Login.css"
 
 import { Link, useHistory } from 'react-router-dom'
-
+import blacklogo from "./images/blacklogo.png";
 import axios from 'axios';
 import { useStateValue } from './StateProvider';
 import Header from './Header';
 import { axiosInstance } from './Config';
+import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 
 function Login() {
   const [{}, dispatch] = useStateValue();
@@ -330,17 +331,15 @@ console.log(error)
   return (
     <div className="login">
       <Link to="/">
-        <img
-          className="login__logo"
-          src="https://pngimg.com/uploads/amazon/amazon_PNG21.png"
-          alt=""
-        />
+        <img className="login__logo" src={blacklogo} alt="" />
       </Link>
 
       <div className="login__container">
-        <h1>Sign-in</h1>
+        <h1>
+          Sign-in <AccountCircleRoundedIcon className="logged__user" />
+        </h1>
         <p className={error ? "login__active__alert" : "login__alert"}>
-         ! {error}
+          ! {error}
         </p>
         <div>
           <h5>E-mail</h5>

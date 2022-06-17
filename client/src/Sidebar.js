@@ -3,6 +3,7 @@ import React,  { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { axiosInstance } from './Config';
+import cancel from "./images/cancel.png";
 import "./Sidebar.css"
 
 function Sidebar({isOpen, toggle}) {
@@ -48,7 +49,7 @@ function Sidebar({isOpen, toggle}) {
     >
       <div className="icon" onClick={toggle}>
         <div className="close__icon">
-          <i class="fa fa-times" aria-hidden="true"></i>
+          <img className="fa-times" src={cancel} alt="" />
         </div>
       </div>
       <div className="sidebar__wrapper">
@@ -72,7 +73,7 @@ function Sidebar({isOpen, toggle}) {
         </ul>
         <div className="sidebtn__wrap">
           <Link
-          to= {!data && "/login"}
+            to={!data && "/login"}
             className="sidebar__route"
             onClick={handleAutentication}
           >

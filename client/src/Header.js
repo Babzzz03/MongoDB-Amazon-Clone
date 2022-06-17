@@ -7,8 +7,10 @@ import { useStateValue } from "./StateProvider";
 
 import axios from "axios";
 import shoppingbasket from "./images/cart2.png";
-import NavbarPreloader from "./NavbarPreloader";
+import whitelogo from "./images/whitelogo.png";
+import sidebar from "./images/sidebar.png";
 import { axiosInstance } from "./Config";
+import HorizontalSplitSharpIcon from "@mui/icons-material/HorizontalSplitSharp";
 
 
 
@@ -80,14 +82,10 @@ const [guest, setGuest] = useState("Guest");
   return (
     <div className="header">
       <div className="mobile__icon" onClick={toggle}>
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <HorizontalSplitSharpIcon className="fa-bars" />
       </div>
       <Link to="/">
-        <img
-          className="header__logo"
-          src="https://www.nicepng.com/png/full/16-167642_amazon-logo-amazon-logo-white-text.png"
-          alt=""
-        />
+        <img className="header__logo" src={whitelogo} alt="" />
       </Link>
       <div className="header__search">
         <input className="header__searchInput" type="text" />
@@ -96,14 +94,13 @@ const [guest, setGuest] = useState("Guest");
 
       <div className="mobile__menu">
         <div className="header__nav">
-    <Link to={!User && "/login"} className="link__style">
+          <Link to={!User && "/login"} className="link__style">
             <div
               onClick={handleAutentication}
               className="header__option visible"
             >
               <span className="header__optionLineOne user__name">
-                <i class="fa fa-user" aria-hidden="true"></i> Hello{" "}
-                {User ? User : guest}
+                Hello, {User ? User : guest}
               </span>
               <span className="header__optionLineTwo">
                 {User ? "Sign Out" : "Sign In"}
@@ -125,8 +122,7 @@ const [guest, setGuest] = useState("Guest");
           </Link>
           <Link to="/checkout" className="link__style">
             <div className="header__optionBasket visible">
-             
-              <img src={shoppingbasket} alt="" srcset="" className="cart"/>
+              <img src={shoppingbasket} alt="" srcset="" className="cart" />
               <span className="header__optionLineTwo header__basketCount">
                 {basket?.length}
               </span>

@@ -93,6 +93,11 @@
 
 .fa-bars {
     color: white;
+    font-size: 12px;
+
+}
+.fa-user {
+  font-size: 9px;
 }
 .mobile__icon {
 display: none;
@@ -117,7 +122,7 @@ display: none;
 .user__name {
     
 white-space: nowrap; 
-  width: 70px; 
+  width: 50px; 
   overflow: hidden;
   text-overflow: ellipsis;
 }
