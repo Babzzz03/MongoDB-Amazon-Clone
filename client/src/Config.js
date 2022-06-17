@@ -2,5 +2,5 @@ import axios from "axios"
 
 
 export const axiosInstance = axios.create({
-  baseURL: "https://babzzz-amazon-clone.herokuapp.com/api/",
+  baseURL: "https://babz-amazonn.herokuapp.com/api/",
 });
