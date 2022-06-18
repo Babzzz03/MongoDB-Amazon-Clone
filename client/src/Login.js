@@ -336,7 +336,7 @@ console.log(error)
 
       <div className="login__container">
         <h1>
-          Sign-in <AccountCircleRoundedIcon className="logged__user" />
+          Sign-in 
         </h1>
         <p className={error ? "login__active__alert" : "login__alert"}>
           ! {error}

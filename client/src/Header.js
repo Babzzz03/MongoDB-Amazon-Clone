@@ -82,7 +82,7 @@ const [guest, setGuest] = useState("Guest");
   return (
     <div className="header">
       <div className="mobile__icon" onClick={toggle}>
-        <HorizontalSplitSharpIcon className="fa-bars" />
+        <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
       <Link to="/">
         <img className="header__logo" src={whitelogo} alt="" />
@@ -100,7 +100,7 @@ const [guest, setGuest] = useState("Guest");
               className="header__option visible"
             >
               <span className="header__optionLineOne user__name">
-                <FontAwesomeIcon icon="fa-solid fa-user" />
+                <FontAwesomeIcon icon="fa-solid fa-user" />{" "}
                 Hello, {User ? User : guest}
               </span>
               <span className="header__optionLineTwo">
