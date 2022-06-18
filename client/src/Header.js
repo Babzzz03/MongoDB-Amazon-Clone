@@ -11,7 +11,7 @@ import whitelogo from "./images/whitelogo.png";
 import sidebar from "./images/sidebar.png";
 import { axiosInstance } from "./Config";
 import HorizontalSplitSharpIcon from "@mui/icons-material/HorizontalSplitSharp";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
@@ -100,6 +100,7 @@ const [guest, setGuest] = useState("Guest");
               className="header__option visible"
             >
               <span className="header__optionLineOne user__name">
+                <FontAwesomeIcon icon="fa-solid fa-user" />
                 Hello, {User ? User : guest}
               </span>
               <span className="header__optionLineTwo">

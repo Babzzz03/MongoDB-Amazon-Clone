@@ -5,7 +5,7 @@ import display4 from "./images/display4.jpg";
 export const sliderData = [
   {
     image:
-      "https://babz-amazonn.herokuapp.com/static/media/display1.e52a0ecff4494580c7be.jpg",
+      "https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     heading: "Fully Functioning Amazon Clone",
     desc: "This is not the main amazon app but behaves like it, with a FULLY FUNCTIONG E-COMMERCE FUNCTIONALLITY",
   },
