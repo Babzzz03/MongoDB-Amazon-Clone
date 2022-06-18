@@ -331,13 +331,15 @@ console.log(error)
   return (
     <div className="login">
       <Link to="/">
-        <img className="login__logo" src={blacklogo} alt="" />
+        <img
+          className="login__logo"
+          src="https://pngimg.com/uploads/amazon/amazon_PNG21.png"
+          alt=""
+        />
       </Link>
 
       <div className="login__container">
-        <h1>
-          Sign-in 
-        </h1>
+        <h1>Sign-in</h1>
         <p className={error ? "login__active__alert" : "login__alert"}>
           ! {error}
         </p>

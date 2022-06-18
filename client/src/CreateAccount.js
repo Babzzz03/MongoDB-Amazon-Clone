@@ -61,7 +61,7 @@ function Login() {
       <Link to="/">
         <img
           className="login__logo"
-          src = { blacklogo }
+          src="https://pngimg.com/uploads/amazon/amazon_PNG21.png"
           alt=""
         />
       </Link>
