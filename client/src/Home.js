@@ -23,7 +23,7 @@ function Home() {
             id="1"
             title="Men Automatic Watch Self Winding Tourbillon Mechanical Business Luxury 5ATM Waterproof Luminous Sapphire Crystal Date Watch for Men"
             price={78}
-            image={watch}
+            image="https://m.media-amazon.com/images/I/81LfGDf0AhL._AC_UL1500_.jpg"
             rating={5}
           />
           <Product
